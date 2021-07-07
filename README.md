@@ -2,6 +2,12 @@
 
 Authenticated Encryption using XChaCha20Poly1305 with an X25519 key exchange.
 
+![x25519-xchacha20poly1305 is considered experimental and unsupported](https://img.shields.io/badge/status-experimental-blueviolet)
+[![crate version](https://img.shields.io/crates/v/x25519_xchacha20poly1305.svg)](https://crates.io/crates/x25519_xchacha20poly1305)
+[![Live Build Status](https://img.shields.io/github/workflow/status/khonsulabs/x25519-xchacha20poly1305/Tests/main)](https://github.com/khonsulabs/x25519-xchacha20poly1305/actions?query=workflow:Tests)
+[![HTML Coverage Report for `main` branch](https://khonsulabs.github.io/x25519-xchacha20poly1305/coverage/badge.svg)](https://khonsulabs.github.io/x25519-xchacha20poly1305/coverage/)
+[![Documentation for `main` branch](https://img.shields.io/badge/docs-main-informational)](https://khonsulabs.github.io/x25519-xchacha20poly1305/main/x25519_xchacha20poly1305/)
+
 ## WARNING / DISCLAIMER
 
 This crate is written by someone who is *not* a cryptographer. And, while the dependencies of this crate are excellent crates, most of the code that this crate is built upon has not been audited. Use at your own risk.
