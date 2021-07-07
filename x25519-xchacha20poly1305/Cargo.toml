@@ -1,0 +1,24 @@
+[package]
+name = "x25519-xchacha20poly1305"
+version = "0.1.0"
+edition = "2018"
+description = "Authenticated Public Key Encryption using `XChaChaPoly20Poly1305` with an `X25519` key exchange."
+repository = "https://github.com/khonsulabs/x25519-xchacha20poly1305"
+license = "MIT OR Apache-2.0"
+keywords = [
+    "encryption",
+    "public-key",
+    "curve25519",
+    "x25519",
+    "poly1305",
+    "xchacha20",
+]
+categories = ["cryptography"]
+readme = "../README.md"
+
+[dependencies]
+x25519-dalek = { version="1" }
+chacha20poly1305 = { version="0.8", features=["xchacha20poly1305"] }
+zeroize = "1"
+serde = { version="1", features=["derive"] }
+rand = "0.7"
