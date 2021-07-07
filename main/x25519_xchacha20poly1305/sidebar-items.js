@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["ephemeral","Encrypts messages for a [`StaticSecret`] using only the [`PublicKey`]."]],"struct":[["PublicKeyEncryption","A public key encryption context."]],"trait":[["Secret","A secret that can be used with `PublicKeyEncryption`."]]});

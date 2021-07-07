@@ -1,0 +1,1 @@
+window.ALL_CRATES = ["x25519_xchacha20poly1305","xtask"];
