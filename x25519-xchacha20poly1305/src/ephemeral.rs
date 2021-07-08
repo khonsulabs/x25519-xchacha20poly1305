@@ -107,6 +107,17 @@ impl PublicKeyExt for PublicKey {
     }
 }
 
+impl PublicKeyExt for StaticSecret {
+    fn encrypt(
+        &self,
+        plaintext: &[u8],
+        associated_data: &[u8],
+        nonce: &[u8],
+    ) -> Result<Vec<u8>, chacha20poly1305::aead::Error> {
+        PublicKey::from(self).encrypt(plaintext, associated_data, nonce)
+    }
+}
+
 impl StaticSecretExt for StaticSecret {
     fn decrypt(
         &self,

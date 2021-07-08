@@ -17,7 +17,7 @@ categories = ["cryptography"]
 readme = "../README.md"
 
 [dependencies]
-x25519-dalek = { version="1" }
+x25519-dalek = { version="1", features=["serde"] }
 chacha20poly1305 = { version="0.8", features=["xchacha20poly1305"] }
 zeroize = "1"
 serde = { version="1", features=["derive"] }

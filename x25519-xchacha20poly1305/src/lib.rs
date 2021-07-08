@@ -209,7 +209,11 @@ mod tests {
 
         let encrypted = public_key.encrypt(b"hello", b"", nonce).unwrap();
         let decrypted = private_key.decrypt(&encrypted, b"", nonce).unwrap();
+        assert_eq!(decrypted, b"hello");
 
+        // Same flow should work, starting with the private key.
+        let encrypted = private_key.encrypt(b"hello", b"", nonce).unwrap();
+        let decrypted = private_key.decrypt(&encrypted, b"", nonce).unwrap();
         assert_eq!(decrypted, b"hello");
     }
 }
